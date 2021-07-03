@@ -199,4 +199,15 @@ img {
   bottom: 9rem;
   opacity: 0;
 }
+
+ul {
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .svg_line1,
+  .svg_line2 {
+    width: auto;
+  }
+}
 </style>

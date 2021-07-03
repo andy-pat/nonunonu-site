@@ -6,7 +6,7 @@
         <h1>upcoming gigs:</h1>
         <ul>
           <a href="https://mif.co.uk/whats-on/festival-square-8-july/">
-            <li>Manchester International Festival 8th July 6.30pm</li>
+            <li>MIF 8th July 18.30</li>
           </a>
         </ul>
       </div>
@@ -78,6 +78,12 @@ body {
     border-radius: 1rem;
     background-color: #c1aed2;
     font-family: Courier;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #app {
+    width: fit-content;
   }
 }
 </style>
