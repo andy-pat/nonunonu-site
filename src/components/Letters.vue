@@ -165,7 +165,7 @@ img {
   position: absolute;
   left: 0;
   top: 9.7rem;
-  width: auto;
+  width: max-content;
 }
 
 .svg_line2 {

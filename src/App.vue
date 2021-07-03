@@ -53,7 +53,7 @@ body {
 }
 
 #app {
-  width: max-content;
+  width: 100%;
 }
 
 /* .container {
@@ -68,7 +68,7 @@ body {
   display: flex;
   align-items: center;
   align-self: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   margin-top: 2rem;
   button {
