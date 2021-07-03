@@ -2,6 +2,14 @@
   <div class="container">
     <Letters />
     <div class="buttons">
+      <div class="gig-listings">
+        <h1>upcoming gigs:</h1>
+        <ul>
+          <a href="https://mif.co.uk/whats-on/festival-square-8-july/">
+            <li>Manchester International Festival 8th July 6.30pm</li>
+          </a>
+        </ul>
+      </div>
       <!-- <button>Sound </button> -->
       <a href="https://www.youtube.com/watch?v=szddj-LsmW8" target="_blank">
         <button>Sound & Vision</button>
@@ -50,6 +58,11 @@ body {
 
 /* .container {
 } */
+
+.gig-listings {
+  position: absolute;
+  top: 0;
+}
 
 .buttons {
   display: flex;
