@@ -1,37 +1,72 @@
 <template>
   <div class="container">
-    <Letters />
     <div class="buttons">
-      <div class="gig-listings">
-        <h1>upcoming gigs:</h1>
-        <ul>
-          <a href="https://mif.co.uk/whats-on/festival-square-8-july/">
-            <li>MIF 8th July 18.30</li>
-          </a>
-        </ul>
-      </div>
-      <!-- <button>Sound </button> -->
+      <button @click="toggleModal">gigs</button>
       <a href="https://www.youtube.com/watch?v=szddj-LsmW8" target="_blank">
-        <button>Sound & Vision</button>
+        <button><i class="fab fa-youtube"></i></button>
       </a>
       <a
         href="https://www.instagram.com/nonunonu_/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <button>Vision</button>
+        <button><i class="fab fa-instagram"></i></button>
       </a>
     </div>
   </div>
+  <Letters />
+  <Gigs v-if="displayGigs" :gigs="gigs" @closeModal="toggleModal" />
 </template>
 
 <script>
 import Letters from "./components/Letters.vue";
-
+import Gigs from "./components/Gigs.vue";
 export default {
   name: "App",
   components: {
     Letters,
+    Gigs,
+  },
+  data() {
+    return {
+      displayGigs: false,
+      gigs: [
+        {
+          venue: "Temple Of Art and Music",
+          date: "22/02/22",
+          link: "https://www.facebook.com/events/1197110244453739?ref=newsfeed",
+        },
+        {
+          venue: "Fuel",
+          link: "https://www.facebook.com/fuelcafebar/",
+          date: "13/03/22",
+        },
+        {
+          venue: "Matt & Phreds",
+          date: "23/03/22",
+        },
+        {
+          venue: "Revolver Liverpool",
+          link: "https://revolverliverpool.co.uk/cavern-quarter-jazz/",
+          date: "25/04/22",
+        },
+        {
+          venue: "Manchester Jazz Festival",
+          date: "24/05/22",
+          link: "https://manchesterjazz.com/",
+        },
+        {
+          venue: "Eskfest",
+          date: "08/07/22",
+        },
+      ],
+    };
+  },
+  methods: {
+    toggleModal() {
+      this.displayGigs = !this.displayGigs;
+      // this.showModal = !this.showModal;
+    },
   },
 };
 </script>
@@ -43,17 +78,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin: 0;
   padding: 0;
-  background-color: #3bd6e685;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  overflow-x: hidden;
+  background-color: #11187a85;
+  // height: 100vh;
+  // width: 100vw;
+  // display: flex;
+  // overflow-x: hidden;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 #app {
   width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: static;
 }
 
 /* .container {
@@ -65,15 +105,12 @@ body {
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  align-self: center;
-  justify-content: space-evenly;
-  width: 100%;
   margin-top: 2rem;
+  display: flex;
+  padding: 0 3rem;
+  justify-content: space-evenly;
   button {
-    width: 80px;
-    height: 4rem;
+    padding: 0.8rem;
     border: dotted 2px darkgreen;
     border-radius: 1rem;
     background-color: #c1aed2;
@@ -82,8 +119,5 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  #app {
-    width: fit-content;
-  }
 }
 </style>
