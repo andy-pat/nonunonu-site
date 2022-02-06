@@ -65,7 +65,6 @@ export default {
   methods: {
     toggleModal() {
       this.displayGigs = !this.displayGigs;
-      // this.showModal = !this.showModal;
     },
   },
 };
@@ -80,10 +79,6 @@ body {
   color: #2c3e50;
   padding: 0;
   background-color: #11187a85;
-  // height: 100vh;
-  // width: 100vw;
-  // display: flex;
-  // overflow-x: hidden;
   margin: 0;
   height: 100%;
   overflow: hidden;
@@ -95,9 +90,6 @@ body {
   overflow: hidden;
   position: static;
 }
-
-/* .container {
-} */
 
 .gig-listings {
   position: absolute;
