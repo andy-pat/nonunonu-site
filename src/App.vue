@@ -63,7 +63,7 @@ export default {
         {
           venue: "Matt and Phreds, Manchester",
           date: "23/03/22",
-          link: "https://mattandphreds.com/",
+          link: "https://mattandphreds.com/march-2022/nonunonu",
         },
         {
           venue: "Revoler, Liverpool",
