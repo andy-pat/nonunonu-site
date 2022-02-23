@@ -1,7 +1,9 @@
 <template>
   <div class="container">
-    <img class="cloud1" src="../assets/cloud1.png" alt="" />
     <img class="cloud2" src="../assets/cloud2.png" alt="" />
+
+    <img class="cloud1" src="../assets/cloud1.png" alt="" />
+
     <img class="cloud3" src="../assets/cloud1.png" alt="" />
     <img class="cloud4" src="../assets/cloud2.png" alt="" />
 
@@ -63,7 +65,7 @@
     </div>
   </div>
 </template>
-<script lang="ts">
+<script>
 import anime from "animejs";
 
 export default {
@@ -134,12 +136,9 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-.container {
-  position: sticky;
-}
+<style>
 .letter_grid {
-  padding-top: 8rem;
+  padding-top: 10rem;
   display: grid;
   grid-template-columns: repeat(4, 6rem);
   grid-template-rows: repeat(2, 7rem);
@@ -148,13 +147,12 @@ export default {
   justify-content: center;
 }
 
-// .line {
-//   position: absolute;
-//   display: block;
-//   left: 0;
-//   top: 4rem;
-//   width: 100%;
-// }
+.line {
+  position: absolute;
+  left: 0;
+  top: 4rem;
+  width: 100%;
+}
 
 img {
   height: 7rem;
@@ -163,12 +161,12 @@ img {
 .svg_line2 {
   position: absolute;
   left: 0;
-  top: 7.7rem;
+  top: 9.7rem;
   width: max-content;
 }
 
 .svg_line2 {
-  top: 19.8rem;
+  top: 21.8rem;
 }
 
 .cloud2 {
@@ -181,14 +179,14 @@ img {
 .cloud1 {
   position: absolute;
   left: 0;
-  // top: 14rem;
+  top: 14rem;
   opacity: 0;
 }
 
 .cloud3 {
   position: absolute;
   left: 0;
-  // top: 16rem;
+  top: 16rem;
   opacity: 0;
   rotate: 180deg;
 }

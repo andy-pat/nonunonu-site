@@ -3,7 +3,7 @@
     <img class="cloud1" src="../assets/cloud1.png" alt="" />
   </div>
 </template>
-<script lang="ts">
+<script>
 import anime from "animejs";
 
 export default {
@@ -30,10 +30,10 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style>
 img {
   height: 100px;
-  //   position: absolute;
+
   top: 30px;
 }
 </style>
