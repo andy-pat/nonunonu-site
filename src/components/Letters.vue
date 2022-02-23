@@ -145,6 +145,12 @@ export default {
   gap: 0rem;
   row-gap: 5rem;
   justify-content: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .line {
@@ -163,6 +169,12 @@ img {
   left: 0;
   top: 9.7rem;
   width: max-content;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .svg_line2 {
