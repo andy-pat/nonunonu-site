@@ -11,7 +11,7 @@
       class="svg_line1"
       width="100%"
       height="45"
-      viewBox="0 0 375 43"
+      viewBox="0 0 380 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -26,7 +26,7 @@
       class="svg_line2"
       width="100%"
       height="45"
-      viewBox="0 0 375 43"
+      viewBox="0 0 375 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -204,7 +204,7 @@ ul {
 @media only screen and (max-width: 500px) {
   .svg_line1,
   .svg_line2 {
-    width: auto;
+    width: 100%;
   }
 }
 </style>

@@ -6,7 +6,11 @@
           <div>
             <p>
               <strong> {{ gig.venue }}</strong> - <i>{{ gig.date }}</i>
-              <a v-if="gig.link" :href="gig.link" style="padding:5px"
+              <a
+                v-if="gig.link"
+                :href="gig.link"
+                style="padding:5px"
+                target="_blank"
                 ><i class="fas fa-external-link-alt"></i
               ></a>
             </p>
