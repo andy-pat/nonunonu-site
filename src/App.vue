@@ -98,17 +98,18 @@ body {
   padding: 0;
   background-color: #3bd6e685;
   height: 100vh;
-  width: 100vw;
-  display: flex;
+  width: 99vw;
+  /* display: flex; */
   overflow-x: hidden;
 }
 
 #app {
-  width: 100%;
+  width: 99vh;
+  overflow-x: hidden;
 }
 
-svg {
-  color: black;
+.buttons svg {
+  fill: darkgreen;
   height: 1.5rem;
 }
 
@@ -127,14 +128,22 @@ svg {
   justify-content: space-evenly;
   width: 100%;
   margin-top: 2rem;
+
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 button {
   height: 5rem;
   width: 5rem;
-  border: dotted 2px darkgreen;
+  border: 2px darkgreen;
   border-radius: 1rem;
-  background-color: #c1aed2;
+  /* background-color: #c1aed2; */
   font-family: Courier;
+  box-shadow: 1px 7px 5px -5px;
 }
 
 @media only screen and (max-width: 500px) {
