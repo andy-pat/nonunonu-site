@@ -50,31 +50,36 @@ export default {
     return {
       showGigs: false,
       gigs: [
-        {
-          venue: "Template of Art and Music, London",
-          date: "RESCHEDULED - TBA",
-          link: "http://www.tam.tv/",
-        },
-        {
-          venue: "Fuel, Manchester",
-          date: "13/03/22",
-          link: "https://www.facebook.com/fuelcafebar/",
-        },
-        {
-          venue: "Matt and Phreds, Manchester",
-          date: "23/03/22",
-          link: "https://mattandphreds.com/march-2022/nonunonu",
-        },
-        {
-          venue: "Revoler, Liverpool",
-          date: "25/04/22",
-          link:
-            "https://revolverliverpool.co.uk/?fbclid=IwAR0X9l1LeW6xExndfpGQRbRgWlIh7D4b6e3u0pii-EYDgqHnR1OW6ikTr-U",
-        },
+        // {
+        //   venue: "Template of Art and Music, London",
+        //   date: "RESCHEDULED - TBA",
+        //   link: "http://www.tam.tv/",
+        // },
+        // {
+        //   venue: "Fuel, Manchester",
+        //   date: "13/03/22",
+        //   link: "https://www.facebook.com/fuelcafebar/",
+        // },
+        // {
+        //   venue: "Matt and Phreds, Manchester",
+        //   date: "23/03/22",
+        //   link: "https://mattandphreds.com/march-2022/nonunonu",
+        // },
+        // {
+        //   venue: "Revoler, Liverpool",
+        //   date: "25/04/22",
+        //   link:
+        //     "https://revolverliverpool.co.uk/?fbclid=IwAR0X9l1LeW6xExndfpGQRbRgWlIh7D4b6e3u0pii-EYDgqHnR1OW6ikTr-U",
+        // },
         {
           venue: "Manchester Jazz Festival",
           date: "24/05/22",
           link: "https://manchesterjazz.com/",
+        },
+        {
+          venue: "Elder Beer Café, Newcastle",
+          date: "21/07/22",
+          link: "https://www.instagram.com/elder_beercafe/",
         },
         {
           venue: "Esk Fest",
