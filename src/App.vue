@@ -72,19 +72,19 @@ export default {
         //     "https://revolverliverpool.co.uk/?fbclid=IwAR0X9l1LeW6xExndfpGQRbRgWlIh7D4b6e3u0pii-EYDgqHnR1OW6ikTr-U",
         // },
         {
+          venue: "Esk Fest",
+          date: "2022-07-08",
+          link: "https://www.eskfest.com/",
+        },
+        {
           venue: "Manchester Jazz Festival",
-          date: "24/05/22",
+          date: "2022-05-24",
           link: "https://manchesterjazz.com/",
         },
         {
           venue: "Elder Beer Café, Newcastle",
-          date: "21/07/22",
+          date: "2022-07-21",
           link: "https://www.instagram.com/elder_beercafe/",
-        },
-        {
-          venue: "Esk Fest",
-          date: "8/07/22",
-          link: "https://www.eskfest.com/",
         },
       ],
     };
