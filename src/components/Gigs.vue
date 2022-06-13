@@ -9,7 +9,7 @@
               <br />
               {{ displayDate(gig.date) }}
               <br />
-              <i style="font-size:10px">({{ formatDate(gig.date) }})</i>
+              <i style="font-size: 10px">({{ formatDate(gig.date) }})</i>
             </p>
           </div>
 
@@ -17,7 +17,7 @@
             <a
               v-if="gig.link"
               :href="gig.link"
-              style="padding:5px"
+              style="padding: 5px"
               target="_blank"
               title="more info"
               ><i class="fas fa-external-link-alt"></i
@@ -32,7 +32,7 @@
 <script>
 import * as dayjs from "dayjs";
 var relativeTime = require("dayjs/plugin/relativeTime");
-// dayjs.extend(relativeTime);
+var isToday = require("dayjs/plugin/isToday");
 
 export default {
   props: ["gigs"],
@@ -44,8 +44,13 @@ export default {
       this.$emit("closeModal");
     },
     formatDate(date) {
-      dayjs.extend(relativeTime);
-      return dayjs(date, "YYYY-MM-DD").fromNow();
+      dayjs.extend(isToday);
+      if (dayjs(date).isToday()) {
+        return "Today";
+      } else {
+        dayjs.extend(relativeTime);
+        return dayjs(date, "YYYY-MM-DD").add(1, "d").fromNow();
+      }
     },
     displayDate(date) {
       return dayjs(date).format("dddd, MMMM D, YYYY");
@@ -53,7 +58,15 @@ export default {
   },
   computed: {
     order() {
-      return this.gigs.sort((a, b) => {
+      const upcomingDates = this.gigs.filter((gig) => {
+        const today = new Date();
+        const dateToCheck = new Date(gig.date);
+        if (dateToCheck.setHours(0, 0, 0, 0) >= today.setHours(0, 0, 0, 0)) {
+          return gig;
+        }
+        return false;
+      });
+      return upcomingDates.sort((a, b) => {
         return new Date(a.date) - new Date(b.date);
       });
     },
@@ -71,6 +84,7 @@ export default {
   transform: translate(-50%, -50%);
   padding: 1rem;
   width: fit-content;
+  z-index: 1;
 }
 .backdrop {
   top: 0;
