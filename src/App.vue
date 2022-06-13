@@ -100,9 +100,7 @@ export default {
     };
   },
   methods: {
-    animate() {
-      console.log("here");
-    },
+    animate() {},
   },
 };
 </script>
@@ -116,7 +114,13 @@ body {
   color: #2c3e50;
   margin: 0;
   padding: 0;
-  background-color: #3bd6e685;
+  background: rgb(228, 227, 29);
+  background: radial-gradient(
+    circle,
+    rgba(228, 227, 29, 0.9055299539170507) 4%,
+    rgba(37, 209, 202, 1) 19%,
+    rgba(0, 170, 255, 1) 100%
+  );
   height: 100vh;
   width: 99vw;
   /* display: flex; */
