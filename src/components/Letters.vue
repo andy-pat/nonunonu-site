@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <img class="cloud2 cloud" src="../assets/cloud2.png" alt="" />
-
     <img class="cloud1 cloud" src="../assets/cloud1.png" alt="" />
     <div class="line_letters_box">
       <svg
