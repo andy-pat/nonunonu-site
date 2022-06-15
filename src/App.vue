@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <div class="">
+    <div class="gradient shape"></div>
     <Letters></Letters>
     <Gigs v-if="showGigs" @closeModal="showGigs = false" :gigs="gigs" />
     <div class="buttons">
@@ -73,7 +74,7 @@ export default {
         // },
         {
           venue: "Esk Fest",
-          date: "2022-07-08",
+          date: "2022-07-08T19:00:00.000",
           link: "https://www.eskfest.com/",
         },
         {
@@ -83,17 +84,17 @@ export default {
         },
         {
           venue: "Elder Beer Café, Newcastle",
-          date: "2022-07-21",
+          date: "2022-07-21T19:00:00.000",
           link: "https://www.instagram.com/elder_beercafe/",
         },
         {
           venue: "Ramona",
-          date: "2022-06-16",
+          date: "2022-06-15T19:00:00.000",
           link: "https://www.takemetoramona.com/",
         },
         {
           venue: "Frederik's, Liverpool",
-          date: "2022-07-5",
+          date: "2022-07-05T21:00:00.000",
           link: "https://frederikshopestreet.com/",
         },
       ],
@@ -114,31 +115,19 @@ body {
   color: #2c3e50;
   margin: 0;
   padding: 0;
-  background: rgb(228, 227, 29);
-  background: radial-gradient(
-    circle,
-    rgba(228, 227, 29, 0.9055299539170507) 4%,
-    rgba(37, 209, 202, 1) 19%,
-    rgba(0, 170, 255, 1) 100%
-  );
   height: 100vh;
   width: 99vw;
-  /* display: flex; */
-  overflow-x: hidden;
 }
 
-#app {
+/* #app {
   width: 99vh;
   overflow-x: hidden;
-}
+} */
 
 .buttons svg {
   fill: darkgreen;
   height: 1.5rem;
 }
-
-/* .container {
-} */
 
 .gig-listings {
   position: absolute;
@@ -151,13 +140,12 @@ body {
   align-self: center;
   justify-content: space-evenly;
   width: 100%;
-  margin-top: 2rem;
-
   position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
+  bottom: 1rem;
   text-align: center;
 }
 button {
@@ -170,9 +158,46 @@ button {
   box-shadow: 1px 7px 5px -5px;
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   #app {
     width: fit-content;
   }
+} */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient {
+  --size: 300px;
+  position: relative;
+  top: -20rem;
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 6));
+  background-image: linear-gradient(
+    rgba(248, 232, 89, 0.85),
+    rgb(223, 166, 32)
+  );
+  animation: rotate 20s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
+}
+
+.shape {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+body {
+  background-color: rgb(0, 170, 255, 1);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  /* place-content: center; */
+  align-items: center;
+  overflow: hidden;
 }
 </style>

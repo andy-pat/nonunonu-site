@@ -3,26 +3,24 @@
     <div class="modal">
       <ul>
         <li v-for="(gig, index) of order" :key="index">
-          <div>
-            <p>
-              <strong> {{ gig.venue }}</strong>
-              <br />
+          <p>
+            <strong>
+              {{ gig.venue }}
+              <a
+                v-if="gig.link"
+                :href="gig.link"
+                style="padding: 5px"
+                target="_blank"
+                title="click for more info"
+                ><i class="fas fa-external-link-alt"></i></a
+            ></strong>
+            <br />
+            <small>
               {{ displayDate(gig.date) }}
-              <br />
-              <i style="font-size: 10px">({{ formatDate(gig.date) }})</i>
-            </p>
-          </div>
-
-          <div>
-            <a
-              v-if="gig.link"
-              :href="gig.link"
-              style="padding: 5px"
-              target="_blank"
-              title="more info"
-              ><i class="fas fa-external-link-alt"></i
-            ></a>
-          </div>
+            </small>
+            <br />
+            <i style="font-size: 10px">({{ formatDate(gig.date) }})</i>
+          </p>
         </li>
       </ul>
     </div>
@@ -44,16 +42,20 @@ export default {
       this.$emit("closeModal");
     },
     formatDate(date) {
-      dayjs.extend(isToday);
-      if (dayjs(date).isToday()) {
-        return "Today";
-      } else {
-        dayjs.extend(relativeTime);
-        return dayjs(date, "YYYY-MM-DD").add(1, "d").fromNow();
-      }
+      // dayjs.extend(isToday);
+      // if (dayjs(date).isToday()) {
+      //   return "Today";
+      // } else {
+      dayjs.extend(relativeTime);
+      return (
+        dayjs(date, "YYYY-MM-DD")
+          // add(1, "d").
+          .fromNow()
+      );
+      // }
     },
     displayDate(date) {
-      return dayjs(date).format("dddd, MMMM D, YYYY");
+      return dayjs(date).format("HH:mm dddd, MMMM D, YYYY");
     },
   },
   computed: {
@@ -78,12 +80,13 @@ export default {
 .modal {
   background: white;
   border-radius: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: fixed;
+  /* top: 0; */
+  /* left: 0; */
+  transform: translate(25%, 25%);
   padding: 1rem;
   width: fit-content;
+
   z-index: 1;
 }
 .backdrop {
