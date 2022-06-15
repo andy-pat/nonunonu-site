@@ -182,7 +182,7 @@ body {
   margin-right: auto;
   left: 0;
   right: 0;
-  bottom: 4rem;
+  bottom: 5rem;
   text-align: center;
 }
 button {
@@ -197,7 +197,7 @@ button {
 
 @media (min-width: 500px) {
   .buttons {
-    bottom: 6rem;
+    bottom: 0rem;
   }
   .buttons svg {
     height: 2.5rem;

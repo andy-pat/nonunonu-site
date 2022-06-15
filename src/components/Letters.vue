@@ -142,7 +142,7 @@ export default {
 $top: random(20) + rem;
 .line_letters_box {
   position: absolute;
-  top: 0;
+  top: -5rem;
   left: 0;
   right: 0;
 }
