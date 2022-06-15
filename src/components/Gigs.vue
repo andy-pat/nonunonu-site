@@ -42,17 +42,8 @@ export default {
       this.$emit("closeModal");
     },
     formatDate(date) {
-      // dayjs.extend(isToday);
-      // if (dayjs(date).isToday()) {
-      //   return "Today";
-      // } else {
       dayjs.extend(relativeTime);
-      return (
-        dayjs(date, "YYYY-MM-DD")
-          // add(1, "d").
-          .fromNow()
-      );
-      // }
+      return dayjs(date, "YYYY-MM-DD").fromNow();
     },
     displayDate(date) {
       return dayjs(date).format("HH:mm dddd, MMMM D, YYYY");
@@ -81,8 +72,6 @@ export default {
   background: white;
   border-radius: 10px;
   position: fixed;
-  /* top: 0; */
-  /* left: 0; */
   transform: translate(25%, 25%);
   padding: 1rem;
   width: fit-content;
