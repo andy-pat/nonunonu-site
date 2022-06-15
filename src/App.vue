@@ -197,7 +197,7 @@ button {
 
 @media (min-width: 500px) {
   .buttons {
-    bottom: 0rem;
+    bottom: 6remrem;
   }
   .buttons svg {
     height: 2.5rem;

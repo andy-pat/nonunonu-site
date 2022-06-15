@@ -71,12 +71,15 @@ export default {
 .modal {
   background: white;
   border-radius: 10px;
-  position: fixed;
-  transform: translate(25%, 25%);
+  /* position: fixed; */
+  transform: translate(0%, 39%);
   padding: 1rem;
-  width: fit-content;
-
+  /* width: -webkit-fit-content; */
+  width: -moz-fit-content;
+  /* width: fit-content; */
   z-index: 1;
+  /* padding: 0rem; */
+  margin: 1rem;
 }
 .backdrop {
   top: 0;
