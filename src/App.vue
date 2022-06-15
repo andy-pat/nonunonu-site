@@ -237,10 +237,11 @@ button {
   height: var(--size);
   filter: blur(calc(var(--size) / 6));
   background-image: linear-gradient(
-    rgba(248, 232, 89, 0.85),
-    rgb(223, 166, 32)
+    rgb(248, 232, 89),
+    rgba(255, 99, 27, 0.945),
+    rgba(230, 2, 154, 0.616)
   );
-  animation: rotate 20s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
+  animation: rotate 14s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
 }
 
 .shape {
