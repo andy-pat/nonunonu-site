@@ -14,12 +14,55 @@
         </button>
       </a>
       <button @click="showGigs = !showGigs" @mouseenter="animate">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <path
             d="M160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32zM0 192H448V464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192zM64 304C64 312.8 71.16 320 80 320H112C120.8 320 128 312.8 128 304V272C128 263.2 120.8 256 112 256H80C71.16 256 64 263.2 64 272V304zM192 304C192 312.8 199.2 320 208 320H240C248.8 320 256 312.8 256 304V272C256 263.2 248.8 256 240 256H208C199.2 256 192 263.2 192 272V304zM336 256C327.2 256 320 263.2 320 272V304C320 312.8 327.2 320 336 320H368C376.8 320 384 312.8 384 304V272C384 263.2 376.8 256 368 256H336zM64 432C64 440.8 71.16 448 80 448H112C120.8 448 128 440.8 128 432V400C128 391.2 120.8 384 112 384H80C71.16 384 64 391.2 64 400V432zM208 384C199.2 384 192 391.2 192 400V432C192 440.8 199.2 448 208 448H240C248.8 448 256 440.8 256 432V400C256 391.2 248.8 384 240 384H208zM320 432C320 440.8 327.2 448 336 448H368C376.8 448 384 440.8 384 432V400C384 391.2 376.8 384 368 384H336C327.2 384 320 391.2 320 400V432z"
           />
+        </svg> -->
+
+        <svg
+          xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:ns1="http://sozi.baierouge.fr"
+          xmlns:cc="http://creativecommons.org/ns#"
+          xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+          xmlns:dc="http://purl.org/dc/elements/1.1/"
+          id="Layer_1"
+          xml:space="preserve"
+          version="1.1"
+          viewBox="0 0 325.594 368.981"
+          inkscape:version="0.91 r13725"
+        >
+          <path
+            id="path3026"
+            d="m263.41 226.14v-171.3h-201.55l-20.805 12.3v247h212.89v-22.035h30.598c-0.001 0-21.134-16.965-21.134-65.965zm-14-37h-36.45v-39h36.441v38.999zm-89.19-84v39h-40.75v-39h40.75zm6 0h40.75v39h-40.75v-39zm-90.356 0h37.605v39h-37.611v-39zm0 45.001h37.605v39h-37.611v-38.999zm0 44.998h37.605v31.008c0 2.792 0.059 5.451 0.166 7.994h-37.781v-39.002zm43.606 31.008v-31.008h40.75v31.008c0 2.792 0.059 5.451 0.166 7.994h-40.745c-0.111-2.53-0.171-5.187-0.171-7.994zm0-37.008v-39h40.75v38.999h-40.75zm46.75-38.998h40.75v38.999h-40.75v-38.999zm83.191-6h-36.441v-39h36.441v39zm-135.41 96c1.581 19.828 6.476 31.323 11.354 37.963h-39.126c-0.952-0.84-2.545-2.62-4.217-6.1-2.521-5.24-5.467-14.92-6.04-31.86h38.027zm19.349 37.963c-4.706-4.322-11.4-14.504-13.334-37.963h40.735c1.581 19.828 6.476 31.323 11.354 37.963h-38.755zm46.75 0c-4.706-4.322-11.4-14.504-13.334-37.963h40.735c1.581 19.828 6.476 31.323 11.354 37.963h-38.755zm-13.707-43.963c-0.11-2.53-0.171-5.188-0.171-7.994v-31.008h40.75v31.008c0 2.792 0.059 5.451 0.166 7.994h-40.745zm46.579-7.994v-31.008h36.441v37.006c0 0.672 0.011 1.332 0.018 1.996h-36.288c-0.111-2.53-0.171-5.187-0.171-7.994zm26.976 73.992h-184.9v-225.01l6.805-4.022v163.04c0 54 21.133 57.957 21.133 57.957h156.95v8.035zm14-22.035h-27.099c-4.706-4.322-11.4-14.504-13.334-37.963h36.072c0.635 14.755 3.059 27.463 7.253 37.963h-2.892z"
+          />
+          <metadata>
+            <rdf:RDF
+              ><cc:Work
+                ><dc:format>image/svg+xml</dc:format
+                ><dc:type
+                  rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+                /><cc:license
+                  rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+                /><dc:publisher
+                  ><cc:Agent rdf:about="http://openclipart.org/"
+                    ><dc:title>Openclipart</dc:title></cc:Agent
+                  ></dc:publisher
+                ></cc:Work
+              ><cc:License
+                rdf:about="http://creativecommons.org/licenses/publicdomain/"
+                ><cc:permits
+                  rdf:resource="http://creativecommons.org/ns#Reproduction" /><cc:permits
+                  rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:permits
+                  rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /></cc:License
+            ></rdf:RDF>
+          </metadata>
         </svg>
       </button>
+
       <a
         href="https://www.instagram.com/nonunonu_/"
         target="_blank"
@@ -126,7 +169,7 @@ body {
 
 .buttons svg {
   fill: darkgreen;
-  height: 1.5rem;
+  height: 2.5rem;
 }
 
 .gig-listings {
@@ -153,18 +196,31 @@ button {
   width: 5rem;
   border: 2px darkgreen;
   border-radius: 1rem;
-  /* background-color: #c1aed2; */
+  opacity: 0.85;
   font-family: Courier;
   box-shadow: 1px 7px 5px -5px;
 }
 
-/* @media only screen and (max-width: 500px) {
-  #app {
-    width: fit-content;
+@media (min-width: 500px) {
+  .buttons {
+    bottom: 6rem;
   }
-} */
+}
 
-@keyframes rotate {
+/* #
+  Desktop
+  only
+  screen
+  and
+  (min-width: 992px)
+  #
+  Huge
+  only
+  screen
+  and */
+(min-width: 1280px)
+  @keyframes
+  rotate {
   0% {
     transform: rotate(0deg);
   }

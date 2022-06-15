@@ -79,18 +79,6 @@ export default {
   },
   methods: {
     animate() {
-      // anime({
-      //   targets: [".n1", ".o2", ".n3", ".u4", ".n5", ".o6"],
-      //   translateX: 4,
-      //   translateY: 10,
-      //   rotate: 2,
-      //   scale: [1.1],
-      //   direction: "alternate",
-      //   loop: true,
-      //   duration: 3000,
-      //   delay: anime.stagger(100),
-      //   easing: "easeOutInBounce",
-      // });
       function randomIntFromInterval(min, max) {
         var int = Math.floor(Math.random() * (max - min + 1) + min);
         return int;
@@ -99,13 +87,14 @@ export default {
       var delay = randomIntFromInterval(2000, 6000);
       anime({
         targets: [".cloud2", ".cloud1"],
-        translateX: [-200, 600],
+        width: "100%",
         translateY: function () {
           return anime.random(0, 100);
         },
-        scale: [0.4, 0.5, 0.3],
-        opacity: [0, 0.8, 0],
+        scale: [0.4, 0.5, 0],
+        opacity: [0, 0.8, 0.3],
         loop: true,
+        alternate: true,
         duration: duration,
         easing: "easeInQuart",
         delay: anime.stagger(delay),
@@ -119,20 +108,18 @@ export default {
           }
         },
       });
-
       anime({
-        targets: [".n5", ".o6", ".n7", ".u8"],
+        targets: [".n1", ".o2", ".n3", ".u4", ".n5", ".o6", ".n7", ".u8"],
         translateX: 4,
-        rotate: -3,
-        translateY: 9,
-        scale: [1.12],
+        translateY: 10,
+        rotate: 2,
+        scale: [1.1],
         direction: "alternate",
         loop: true,
-        duration: 3000,
-        delay: anime.stagger(100),
+        duration: duration / 2,
+        delay: anime.stagger(delay / 30),
         easing: "easeOutInBounce",
       });
-
       const linePath1 = "M0 1C41.25 19.738 306.136 22.2235 375 1";
       const linePath2 = "M0 1C10    22.5    320    30.5      375 1";
       linePath1;
@@ -145,7 +132,7 @@ export default {
         scale: 1.1,
         d: [{ value: linePath2 }, { value: linePath1 }],
         loop: true,
-        delay: anime.stagger(300),
+        delay: duration / 2,
       });
     },
   },
@@ -168,6 +155,19 @@ $top: random(20) + rem;
   position: relative;
   left: 0rem;
   top: 9.5rem;
+}
+
+@media (min-width: 500px) {
+  .letter_grid {
+    grid-template-columns: repeat(8, 5rem);
+    top: 12.5rem;
+
+    display: flex;
+    justify-content: center;
+  }
+  .svg_line2 {
+    display: none;
+  }
 }
 img {
   height: 7rem;
