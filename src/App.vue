@@ -139,6 +139,21 @@ export default {
           date: "2022-07-05T21:00:00.000",
           link: "https://frederikshopestreet.com/",
         },
+        {
+          venue: "Frederik's, Liverpool",
+          date: "2022-11-03T21:00:00.000",
+          link: "https://frederikshopestreet.com/",
+        },
+        {
+          venue: "Hosting: Ramona Jazz Jam",
+          date: "2022-09-22T20:00:00.000",
+          link: "https://www.takemetoramona.com/",
+        },
+        {
+          venue: "Old Abbey Taphouse (supporting Plant Food)",
+          date: "2022-11-06T21:00:00.000",
+          link: "https://theoldabbeytaphouse.weebly.com/",
+        },
       ],
     };
   },
