@@ -150,7 +150,7 @@ export default {
         },
         {
           venue: "Frederik's, Liverpool",
-          date: "2022-11-03T21:00:00.000",
+          date: "2022-11-02T21:00:00.000",
           link: "https://frederikshopestreet.com/",
         },
         {
