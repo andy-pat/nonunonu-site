@@ -2,7 +2,7 @@
   <div class="">
     <div class="gradient shape"></div>
     <Letters></Letters>
-    <About v-if="showAbout"></About>
+    <About v-if="showAbout" @closeModal="showAbout = false"></About>
     <Gigs v-if="showGigs" @closeModal="showGigs = false" :gigs="gigs" />
     <div class="buttons">
       <a

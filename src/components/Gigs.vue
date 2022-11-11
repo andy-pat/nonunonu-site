@@ -1,7 +1,7 @@
 <template>
   <div class="backdrop" @click.self="closeModal">
     <div class="modal">
-      <ul>
+      <ul v-if="order.length">
         <li v-for="(gig, index) of order" :key="index">
           <p>
             <strong>
@@ -23,6 +23,7 @@
           </p>
         </li>
       </ul>
+      <p v-else>No upcoming gigs, stay tuned</p>
     </div>
   </div>
 </template>

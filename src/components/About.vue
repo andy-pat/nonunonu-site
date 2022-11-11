@@ -13,7 +13,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    closeModal() {
+      this.$emit("closeModal");
+    },
+  },
+};
 </script>
 
 <style>
