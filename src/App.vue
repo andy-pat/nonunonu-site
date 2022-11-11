@@ -2,6 +2,7 @@
   <div class="">
     <div class="gradient shape"></div>
     <Letters></Letters>
+    <About v-if="showAbout"></About>
     <Gigs v-if="showGigs" @closeModal="showGigs = false" :gigs="gigs" />
     <div class="buttons">
       <a
@@ -17,6 +18,13 @@
           </svg>
         </button>
       </a>
+      <button
+        @click="showAbout = !showAbout"
+        @mouseenter="animate"
+        title="upcoming events"
+      >
+        <img :src="reviewSVG" alt="reviews" class="review" />
+      </button>
       <button
         @click="showGigs = !showGigs"
         @mouseenter="animate"
@@ -91,16 +99,19 @@
 <script>
 import Letters from "./components/Letters.vue";
 import Gigs from "./components/Gigs.vue";
+import About from "./components/About.vue";
 
 export default {
   name: "App",
   components: {
     Letters,
     Gigs,
+    About,
   },
   data() {
     return {
       showGigs: false,
+      showAbout: false,
       gigs: [
         // {
         //   venue: "Template of Art and Music, London",
@@ -164,6 +175,7 @@ export default {
           link: "https://theoldabbeytaphouse.weebly.com/",
         },
       ],
+      reviewSVG: require("./assets/review.svg"),
     };
   },
   methods: {
@@ -188,6 +200,11 @@ body {
 .buttons svg {
   fill: darkgreen;
   height: 2rem;
+}
+
+.review {
+  height: 1.6rem;
+  fill: darkgreen;
 }
 
 .gig-listings {
