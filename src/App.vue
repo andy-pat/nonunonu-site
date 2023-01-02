@@ -174,6 +174,76 @@ export default {
           date: "2022-11-06T21:00:00.000",
           link: "https://theoldabbeytaphouse.weebly.com/",
         },
+        {
+          venue: "Edinburgh Jazz Bar",
+          date: "2023-02-01T21:00:00.000",
+          link: "https://www.thejazzbar.co.uk/",
+        },
+        {
+          venue: "Elder Beer Cafe, Newcastle",
+          date: "2023-02-03T21:00:00.000",
+          link: "https://www.elderbeercafe.co.uk",
+        },
+        {
+          venue: "Oil, Shrewsbury",
+          date: "2023-02-04T21:00:00.000",
+          link: "https://www.oilnightlong.co.uk/events",
+        },
+        {
+          venue: "Temple of arts and Music, London",
+          date: "2023-02-07T21:00:00.000",
+          link: "https://temple-of-art-and-music-tam.business.site/",
+        },
+        {
+          venue: "Canteen, Bristol",
+          date: "2023-02-08T21:00:00.000",
+          link: "https://www.canteenbristol.co.uk/",
+        },
+        {
+          venue: "Fredericks, Liverpool",
+          date: "2023-02-09T21:00:00.000",
+          link: "https://frederikshopestreet.com/",
+        },
+        {
+          venue: "Band On The Wall",
+          date: "2023-02-10T21:00:00.000",
+          link: "https://bandonthewall.org/",
+        },
+        {
+          venue: "Zeffirellis, Ambleside",
+          date: "2023-02-11T21:00:00.000",
+          link: "https://www.zeffirellis.com/live-music/nonunonu",
+        },
+        {
+          venue: "Jazz at Lescar, Sheffield",
+          date: "2023-03-01T21:00:00.000",
+          link: "https://www.sheffieldjazz.org.uk/sheffield-jazz-lescar-collaboration/",
+        },
+        {
+          venue: "More Music, Morecambe (supporting Xhosa Cole)",
+          date: "2023-03-04T21:00:00.000",
+          link: "https://moremusic.org.uk/whats-on/all-the-right-notes-xhosa-cole-quartet/",
+        },
+        {
+          venue: "Matt & Phreds",
+          date: "2023-03-07T21:00:00.000",
+          link: "https://mattandphreds.com/october-2022/nonunonu",
+        },
+        {
+          venue: "Oil, Shrewsbury (Jam)",
+          date: "2023-02-28T21:00:00.000",
+          link: "https://www.oilnightlong.co.uk/events",
+        },
+        {
+          venue: "Oil, Shrewsbury (Jam)",
+          date: "2023-03-28T21:00:00.000",
+          link: "https://www.oilnightlong.co.uk/events",
+        },
+        {
+          venue: "The Corner Boy, Manchester",
+          date: "2023-03-17T21:00:00.000",
+          link: "https://www.instagram.com/thecornerboynq/?hl=en",
+        },
       ],
       reviewSVG: require("./assets/review.svg"),
     };
