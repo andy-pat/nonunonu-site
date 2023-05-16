@@ -68,7 +68,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .modal {
   background: white;
   border-radius: 10px;

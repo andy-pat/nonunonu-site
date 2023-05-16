@@ -2,8 +2,8 @@
   <div class="">
     <div class="gradient shape"></div>
     <Letters></Letters>
-    <About v-if="showAbout" @closeModal="showAbout = false"></About>
     <Gigs v-if="showGigs" @closeModal="showGigs = false" :gigs="gigs" />
+    <About v-if="showAbout" @closeModal="showAbout = false"></About>
     <div class="buttons">
       <a
         href="https://www.youtube.com/watch?v=szddj-LsmW8"
@@ -244,6 +244,41 @@ export default {
           date: "2023-03-17T21:00:00.000",
           link: "https://www.instagram.com/thecornerboynq/?hl=en",
         },
+        {
+          venue: "JAM ON THE WALL: NONUNONU: MANCHESTER JAZZ FESTIVAL",
+          date: "2023-05-25T21:00:00.000",
+          link: "https://bandonthewall.org/events/jam-on-the-wall-nonunonu-manchester-jazz-festival/",
+        },
+        {
+          venue: "Northern Quarter, Huddersfield",
+          date: "2023-06-03T19:00:00.000",
+          link: "https://www.tickettailor.com/events/northernquarter/919933?",
+        },
+        {
+          venue: "Northern Guitars, Leeds",
+          date: "2023-06-08T21:00:00.000",
+          link: "https://www.instagram.com/northernguitarsuk/",
+        },
+        {
+          venue: "Lower Third, Soho",
+          date: "2023-06-15T21:00:00.000",
+          link: "https://dice.fm/event/3g25l-secret-night-gang-15th-jun-the-lower-third-london-tickets?pid=2bdac531&_branch_match_id=1187108038955972881&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Q8wT05LBCJziyQD%2B4LMFFujpJTEZFNjQwDpOp1WLgAAAA%3D%3D",
+        },
+        {
+          venue: "Oil Night Long",
+          date: "2023-06-24T21:00:00.000",
+          link: "https://www.instagram.com/oilnightlong/",
+        },
+        {
+          venue: "Esk Fest",
+          date: "2023-07-07T21:00:00.000",
+          link: "https://www.eskfest.com/",
+        },
+        {
+          venue: "Matt & Phreds",
+          date: "2023-08-03T21:00:00.000",
+          link: "https://mattandphreds.com/",
+        },
       ],
       reviewSVG: require("./assets/review.svg"),
     };
@@ -255,6 +290,9 @@ export default {
 </script>
 
 <style>
+#app {
+  height: 100%;
+}
 body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -277,19 +315,14 @@ body {
   fill: darkgreen;
 }
 
-.gig-listings {
-  position: absolute;
-  top: 0;
-}
-
 .buttons {
   display: flex;
   align-items: center;
   align-self: center;
   justify-content: space-evenly;
   width: 100%;
-  position: absolute;
-  margin-left: auto;
+  /* position: absolute; */
+  /* margin-left: auto; */
   margin-right: auto;
   left: 0;
   right: 0;
@@ -347,7 +380,7 @@ body {
   background-color: rgb(0, 170, 255, 1);
   position: absolute;
   inset: 0;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   overflow: hidden;
 }
